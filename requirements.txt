@@ -1,5 +1,7 @@
 fastapi
 uvicorn
 pymupdf
-gemini-ai
+google.generativeai
 psycopg2
+fitz
+re
