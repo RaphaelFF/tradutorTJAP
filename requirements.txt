@@ -4,4 +4,4 @@ pymupdf
 google.generativeai
 psycopg2
 fitz
-re
+
