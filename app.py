@@ -3,7 +3,7 @@ import google.generativeai as genai
 import psycopg2
 import re
 from fastapi import FastAPI, UploadFile, File, Form
-from fastapi.responses import FileResponse
+#from fastapi.responses import FileResponse
 
 app = FastAPI()
 
