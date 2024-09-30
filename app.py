@@ -2,9 +2,8 @@ import fitz  # PyMuPDF
 import google.generativeai as genai
 import psycopg2
 import re
-from fastapi import FastAPI, UploadFile, File
+from fastapi import FastAPI, UploadFile, File, Form
 from fastapi.responses import FileResponse
-import os
 
 app = FastAPI()
 
@@ -84,19 +83,36 @@ def processar_pdf(input_pdf_path, output_pdf_path):
     pdf_document.save(output_pdf_path)
     pdf_document.close()
 
+# Processamento de Texto
+def processar_texto(texto):
+    termos_encontrados = verificar_termos(texto)
+    texto_simplificado = texto
+
+    if termos_encontrados:
+        for termo, definicao in termos_encontrados.items():
+            sugestoes = simplificar_termos(termo, definicao, texto)
+            texto_simplificado = texto_simplificado.replace(termo, f"{termo} ({sugestoes})")
+
+    return texto_simplificado
+
 # Endpoint para upload e processamento de PDF
-@app.post("/process_pdf/")
-async def process_pdf(file: UploadFile = File(...)):
-    input_path = "input.pdf"
-    output_path = "output.pdf"
+# @app.post("/process_pdf/")
+# async def process_pdf(file: UploadFile = File(...)):
+#     input_path = "input.pdf"
+#     output_path = "output.pdf"
 
-    # Salvando o arquivo PDF enviado
-    with open(input_path, "wb") as f:
-        f.write(await file.read())
+#     # Salvando o arquivo PDF enviado
+#     with open(input_path, "wb") as f:
+#         f.write(await file.read())
 
-    # Processando o PDF
-    processar_pdf(input_path, output_path)
+#     # Processando o PDF
+#     processar_pdf(input_path, output_path)
 
-    # Retornando o arquivo PDF processado
-    return FileResponse(output_path, media_type='application/pdf', filename='output.pdf')
+#     # Retornando o arquivo PDF processado
+#     return FileResponse(output_path, media_type='application/pdf', filename='output.pdf')
 
+# Endpoint para processamento de texto
+@app.post("/process_text/")
+async def process_text(text: str = Form(...)):
+    texto_simplificado = processar_texto(text)
+    return {"texto_simplificado": texto_simplificado}
