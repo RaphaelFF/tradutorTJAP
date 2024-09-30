@@ -3,4 +3,5 @@ uvicorn
 pymupdf
 google.generativeai
 psycopg2-binary
+python-multipart
 
