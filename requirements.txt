@@ -2,5 +2,5 @@ fastapi
 uvicorn
 pymupdf
 google.generativeai
-psycopg2
+psycopg2-binary
 
