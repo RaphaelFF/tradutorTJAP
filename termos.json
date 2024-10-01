@@ -1,13 +1,240 @@
 {
-    "termos_juridicos": [
-      {
-        "termo": "autos",
-        "definicao": "Remédio constitucional que protege o direito de locomoção."
-      },
-      {
-        "termo": "Mandado de Segurança",
-        "definicao": "Ação judicial para proteger o direito líquido e certo."
-      }
-
-    ]
-  }
+  "termos_juridicos": [
+    {
+      "termo": "INTEMPESTIVO",
+      "definicao": "é o ato processual realizado fora do prazo estabelecido pela lei."
+    },
+    {
+      "termo": "AÇÃO",
+      "definicao": "é o processo ou procedimento que uma pessoa inicia ao levar um problema ou questão para ser resolvido em um tribunal."
+    },
+    {
+      "termo": "AÇÃO CIVIL PÚBLICA",
+      "definicao": "é quando uma organização processa uma empresa ou indivíduo em nome de um grupo de pessoas afetadas por um problema em comum."
+    },
+    {
+      "termo": "BEM DE FAMÍLIA",
+      "definicao": "é um imóvel protegido por lei contra execuções judiciais para pagamento de dívidas, especialmente aqueles destinados à moradia da família."
+    },
+    {
+      "termo": "CERTIDÃO DE OBJETO E PÉ",
+      "definicao": "é um papel dado pelo tribunal que diz do que se trata um caso e como está indo, junto com um resumo do que aconteceu até agora."
+    },
+    {
+      "termo": "DANO MORAL",
+      "definicao": "é violação a um dos direitos da personalidade previstos no artigo 11 do Código Civil."
+    },
+    {
+      "termo": "HONORÁRIOS DE SUCUMBÊNCIA",
+      "definicao": "é a verba devida quando alguém perde um processo e é preciso pagar ao advogado da pessoa que ganhou."
+    },
+    {
+      "termo": "INTERDITO PROIBITÓRIO",
+      "definicao": "é uma medida judicial preventiva utilizada para evitar a ocorrência de danos iminentes ou para impedir que uma pessoa seja privada de seu direito de posse ou propriedade."
+    },
+    {
+      "termo": "AGENDAMENTO",
+      "definicao": "é uma decisão judicial provisória, emitida antes do julgamento final de uma ação, com o objetivo de evitar danos imediatos ou irreparáveis."
+    },
+    {
+      "termo": "executivo",
+      "definicao": "é um documento que determina como se dará o cumprimento de uma obrigação."
+    },
+    {
+      "termo": "ÔNUS DA PROVA",
+      "definicao": "é a obrigação de demonstrar a veracidade dos fatos ou a validade dos argumentos que estão sendo apresentados em juízo."
+    },
+    {
+      "termo": "PARTES",
+      "definicao": "são as pessoas que atuam no processo: autor, réu, seus litisconsortes, e também os terceiros interessados."
+    },
+    {
+      "termo": "PERÍCIA",
+      "definicao": "é uma investigação técnica ou científica conduzida por um especialista em uma área específica para fornecer evidências ou opiniões especializadas."
+    },
+    {
+      "termo": "RECESSO JUDICIÁRIO",
+      "definicao": "é um período de suspensão das atividades judiciais que ocorre em determinados momentos do ano."
+    },
+    {
+      "termo": "RECORRIDO",
+      "definicao": "é a parte que é alvo de um recurso apresentado por outra parte, chamada de recorrente."
+    },
+    {
+      "termo": "RELATOR",
+      "definicao": "é um membro do tribunal designado para analisar um caso e elaborar um parecer sobre ele."
+    },
+    {
+      "termo": "SÚMULA",
+      "definicao": "é um enunciado que resume o entendimento predominante de um tribunal sobre uma questão jurídica específica."
+    },
+    {
+      "termo": "SUSPEIÇÃO",
+      "definicao": "é a situação em que um juiz é considerado parcial ou tem interesse pessoal no resultado de um processo."
+    },
+    {
+      "termo": "APELAÇÃO",
+      "definicao": "é um tipo de recurso que uma parte pode apresentar quando não concorda com a decisão do tribunal."
+    },
+    {
+      "termo": "ARBITRAGEM",
+      "definicao": "é um processo alternativo de resolução de disputas onde as partes concordam em submeter a decisão a um terceiro imparcial."
+    },
+    {
+      "termo": "ASSISTÊNCIA JUDICIÁRIA",
+      "definicao": "é a ajuda legal gratuita para pessoas que não podem pagar por um advogado."
+    },
+    {
+      "termo": "AUDIÊNCIA DE INSTRUÇÃO E JULGAMENTO",
+      "definicao": "é uma reunião onde o juiz conversa com as partes e há testemunhos verbais."
+    },
+    {
+      "termo": "AUTOS",
+      "definicao": "é o conjunto de todos os documentos e papéis relacionados a um processo legal."
+    },
+    {
+      "termo": "CONCILIAÇÃO",
+      "definicao": "é a solução onde as próprias partes decidem sobre a questão."
+    },
+    {
+      "termo": "CONTRATO",
+      "definicao": "é um acordo entre duas ou mais pessoas que pode ser legalmente exigido."
+    },
+    {
+      "termo": "DECADÊNCIA",
+      "definicao": "é quando alguém perde um direito por deixar passar o prazo legal para usá-lo."
+    },
+    {
+      "termo": "DESPACHO",
+      "definicao": "é uma ação do juiz que mantém o processo em andamento sem decidir questões principais."
+    },
+    {
+      "termo": "IMPEDIMENTO",
+      "definicao": "é quando um juiz não pode participar de um processo por suspeita de parcialidade."
+    },
+    {
+      "termo": "JURISPRUDÊNCIA",
+      "definicao": "é o conjunto de decisões judiciais que servem de precedentes para casos futuros."
+    },
+    {
+      "termo": "LITÍGIO",
+      "definicao": "é uma disputa legal entre duas ou mais partes em um tribunal."
+    },
+    {
+      "termo": "MÉRITO",
+      "definicao": "é a questão central em disputa em um processo judicial."
+    },
+    {
+      "termo": "PETIÇÃO",
+      "definicao": "é um documento formal apresentado por uma parte em um processo judicial."
+    },
+    {
+      "termo": "PRESCRIÇÃO",
+      "definicao": "é um prazo que a lei estabelece para você agir na Justiça."
+    },
+    {
+      "termo": "PRECLUSÃO",
+      "definicao": "é a perda de uma oportunidade processual devido ao não exercício de um direito dentro do prazo."
+    },
+    {
+      "termo": "REVELIA",
+      "definicao": "é a situação em que uma parte não comparece ou não se defende adequadamente."
+    },
+    {
+      "termo": "SEGREDO DE JUSTIÇA",
+      "definicao": "é uma medida que restringe o acesso público a informações sobre um processo judicial."
+    },
+    {
+      "termo": "AÇÃO PENAL",
+      "definicao": "é quando o Estado processa alguém por ter cometido um crime."
+    },
+    {
+      "termo": "ARRAS",
+      "definicao": "é uma espécie de sinal dada em um contrato para garantir seu cumprimento."
+    },
+    {
+      "termo": "BEM FUNGÍVEL",
+      "definicao": "é algo que pode ser facilmente substituído por algo similar."
+    },
+    {
+      "termo": "CARTA ROGATÓRIA",
+      "definicao": "é uma solicitação judicial para que uma autoridade de outro local tome uma ação."
+    },
+    {
+      "termo": "COISA JULGADA",
+      "definicao": "é uma decisão que não pode mais ser contestada."
+    },
+    {
+      "termo": "DISTRIBUIÇÃO",
+      "definicao": "é a determinação da vara em que o processo deverá tramitar."
+    },
+    {
+      "termo": "EXECUÇÃO",
+      "definicao": "é a etapa do processo que visa garantir que uma decisão judicial seja cumprida."
+    },
+    {
+      "termo": "LITISPENDÊNCIA",
+      "definicao": "é a situação de haver um processo em curso entre as mesmas partes e com o mesmo objeto."
+    },
+    {
+      "termo": "MANDADO",
+      "definicao": "é uma ordem emitida pelo juiz para que uma ação seja executada."
+    },
+    {
+      "termo": "PROCURAÇÃO AD JUDICIA",
+      "definicao": "é uma procuração que autoriza alguém a representar outra pessoa em processos judiciais."
+    },
+    {
+      "termo": "RECORRENTE",
+      "definicao": "é a parte que apresenta um recurso contra uma decisão judicial."
+    },
+    {
+      "termo": "TESTAMENTO",
+      "definicao": "é um documento onde uma pessoa declara como deseja que seus bens sejam distribuídos após sua morte."
+    },
+    {
+      "termo": "TRANSITO EM JULGADO",
+      "definicao": "é quando uma decisão judicial se torna definitiva e irrecorrível."
+    },
+    {
+      "termo": "ACÓRDÃO",
+      "definicao": "é uma decisão escrita emitida por um tribunal após o julgamento de um caso."
+    },
+    {
+      "termo": "AGRAVO",
+      "definicao": "é um recurso apresentado quando não se concorda com uma decisão judicial durante o processo."
+    },
+    {
+      "termo": "ALIENAÇÃO",
+      "definicao": "é a transferência legal de propriedade de um bem ou direito."
+    },
+    {
+      "termo": "CITAÇÃO",
+      "definicao": "é o ato de chamar oficialmente o réu para participar do processo."
+    },
+    {
+      "termo": "DECISÃO INTERLOCUTÓRIA",
+      "definicao": "é uma decisão do juiz que lida com questões secundárias durante o processo."
+    },
+    {
+      "termo": "JUSTIÇA GRATUITA",
+      "definicao": "é o princípio que garante acesso à justiça para quem não pode pagar."
+    },
+    {
+      "termo": "MANDADO DE SEGURANÇA",
+      "definicao": "é uma ação para proteger direitos líquidos e certos de violação por ato ilegal."
+    },
+    {
+      "termo": "PREPOSTO",
+      "definicao": "é a pessoa que representa uma pessoa jurídica em audiência."
+    },
+    {
+      "termo": "RECURSO DE APELAÇÃO",
+      "definicao": "é um recurso que mantém o processo em andamento sem decidir questões principais."
+    },
+    {
+      "termo": "QUITAÇÃO",
+      "definicao": "é o ato de pagar uma dívida ou receber o pagamento devido."
+    }
+  ]
+}
