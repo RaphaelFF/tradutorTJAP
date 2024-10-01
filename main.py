@@ -8,7 +8,7 @@ from fastapi.responses import FileResponse
 
 app = FastAPI()
 
-# Configurando a API do Google Generative AI
+# Configurando a API do Google Generative AI a
 GOOGLE_API_KEY = "AIzaSyBBIfJTI973pSnol3UBsH3TPxmg1kqhmug"
 genai.configure(api_key=GOOGLE_API_KEY)
 
