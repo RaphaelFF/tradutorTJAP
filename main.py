@@ -1,7 +1,10 @@
 import google.generativeai as genai
 import re
 import json
-from fastapi import FastAPI, Form
+from fastapi import FastAPI, UploadFile, File, Form
+import psycopg2
+import fitz
+from fastapi.responses import FileResponse
 
 app = FastAPI()
 
@@ -50,6 +53,28 @@ def simplificar_termos(termo, definicao, texto):
     )
     return resposta.text
 
+# Processamento de PDF
+def processar_pdf(input_pdf_path, output_pdf_path):
+    pdf_document = fitz.open(input_pdf_path)
+    page_count = pdf_document.page_count
+
+    for page_number in range(page_count):
+        page = pdf_document.load_page(page_number)
+        texto = page.get_text()
+        termos_encontrados = verificar_termos(texto)
+
+        if termos_encontrados:
+            for termo, definicao in termos_encontrados.items():
+                sugestoes = simplificar_termos(termo, definicao, texto)
+
+                text_instances = page.search_for(termo)
+                for inst in text_instances:
+                    link_rect = fitz.Rect(inst)
+                    page.add_freetext_annot(link_rect, sugestoes, fontsize=1, rotate=0)
+
+    pdf_document.save(output_pdf_path)
+    pdf_document.close()
+
 # Processamento de Texto
 def processar_texto(texto):
     termos_encontrados = verificar_termos(texto)
@@ -61,6 +86,23 @@ def processar_texto(texto):
             texto_simplificado = texto_simplificado.replace(termo, f"{termo} ({sugestoes})")
 
     return texto_simplificado
+
+#Endpoint para upload e processamento de PDF
+@app.post("/process_pdf/")
+async def process_pdf(file: UploadFile = File(...)):
+    input_path = "input.pdf"
+    output_path = "output.pdf"
+
+    # Salvando o arquivo PDF enviado
+    with open(input_path, "wb") as f:
+        f.write(await file.read())
+
+    # Processando o PDF
+    processar_pdf(input_path, output_path)
+
+    # Retornando o arquivo PDF processado
+    return FileResponse(output_path, media_type='application/pdf', filename='output.pdf')
+
 
 # Endpoint para processamento de texto
 @app.post("/process_text/")
